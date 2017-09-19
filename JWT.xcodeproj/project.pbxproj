@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2734C6A81D88001F00BFF9F1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66725DAB1C59202E00FC32F4 /* CryptoSwift.framework */; };
 		2734C6A91D88002900BFF9F1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66725DAB1C59202E00FC32F4 /* CryptoSwift.framework */; };
 		2734C6AA1D88003000BFF9F1 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66725DAB1C59202E00FC32F4 /* CryptoSwift.framework */; };
 		277794051DF221F800573F3E /* ClaimSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277794041DF221F800573F3E /* ClaimSet.swift */; };
@@ -29,6 +28,7 @@
 		520A71181C469F010005C709 /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A71141C469F010005C709 /* Claims.swift */; };
 		520A71191C469F010005C709 /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A71151C469F010005C709 /* Decode.swift */; };
 		520A711A1C469F010005C709 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A71161C469F010005C709 /* JWT.swift */; };
+		B021A5901F71D116004DA5EB /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66725DAB1C59202E00FC32F4 /* CryptoSwift.framework */; };
 		CD9B62171C7753D8005D4844 /* Claims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A71141C469F010005C709 /* Claims.swift */; };
 		CD9B62181C7753D8005D4844 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A71161C469F010005C709 /* JWT.swift */; };
 		CD9B62191C7753D8005D4844 /* Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520A71151C469F010005C709 /* Decode.swift */; };
@@ -69,12 +69,12 @@
 			remoteGlobalIDString = 754BE46019693E190098E6F3;
 			remoteInfo = CryptoSwiftTests;
 		};
-		CD9B628A1C7758CA005D4844 /* PBXContainerItemProxy */ = {
+		B021A5911F71D223004DA5EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66725DA21C59202E00FC32F4 /* CryptoSwift.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 754BE45419693E190098E6F3;
-			remoteInfo = "CryptoSwift iOS";
+			remoteInfo = CryptoSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2734C6A81D88001F00BFF9F1 /* CryptoSwift.framework in Frameworks */,
+				B021A5901F71D116004DA5EB /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +326,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				CD9B628B1C7758CA005D4844 /* PBXTargetDependency */,
+				B021A5921F71D223004DA5EB /* PBXTargetDependency */,
 			);
 			name = "JWT-iOS";
 			productName = JWT;
@@ -377,7 +377,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Cocode;
 				TargetAttributes = {
 					279D639B1AD07FFF0024E2BC = {
@@ -543,10 +543,10 @@
 			target = 279D639B1AD07FFF0024E2BC /* JWT-OSX */;
 			targetProxy = 279D63A91AD07FFF0024E2BC /* PBXContainerItemProxy */;
 		};
-		CD9B628B1C7758CA005D4844 /* PBXTargetDependency */ = {
+		B021A5921F71D223004DA5EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "CryptoSwift iOS";
-			targetProxy = CD9B628A1C7758CA005D4844 /* PBXContainerItemProxy */;
+			name = CryptoSwift;
+			targetProxy = B021A5911F71D223004DA5EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -559,14 +559,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -609,14 +615,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
